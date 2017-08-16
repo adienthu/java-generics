@@ -13,6 +13,9 @@ import java.util.Map;
 
 import javax.xml.crypto.Data;
 
+/**
+ * Based on the chapter on Generics in Effective Java
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -59,6 +62,8 @@ public class Main {
          * as an Object instance but the methods for putting and getting values from the map are type-safe.
          * The put API ensures that the value's datatype matches the type encoded in Column: both have to be T.
          * The get API ensures that when a column of T is provided, a T instance is returned.
+         *
+         * Reference: https://gerardnico.com/wiki/design_pattern/typesafe_heterogeneous_container
          */
         Map<String, Object> map = new HashMap<>();
         map.put("name", "Varun");
